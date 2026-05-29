@@ -1,6 +1,6 @@
 import React, { useState } from "react"
+import SEO from "../components/SEO"
 
-// ↓ Paste your Web3Forms access key here (get one free at https://web3forms.com)
 const WEB3FORMS_ACCESS_KEY = "1894ea78-1e25-4827-b899-3dce28e47612"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
@@ -57,6 +57,12 @@ export default function Partners() {
 
   return (
     <div>
+      <SEO
+        title="Partner With BytzAI — Strategic Technology Partnerships"
+        description="Join BytzAI's partner network. We collaborate with consulting firms, agencies, system integrators, and enterprise transformation partners to expand delivery capabilities using AI-powered engineering."
+        keywords="BytzAI partners, technology partnership, white-label software delivery, AI engineering partnership, consulting firm partnership, system integrator partnership"
+        canonical="/partners"
+      />
       <section className="relative min-h-[60vh] flex flex-col justify-end pb-20 pt-36 overflow-hidden bg-[#F7F5F2]">
         <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
         {[

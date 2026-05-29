@@ -6,6 +6,7 @@ import { Textarea } from "../components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select"
 import { toast } from "sonner"
 import Footer from "../components/landing/Footer"
+import SEO from "../components/SEO"
 
 // ↓ Paste your Web3Forms access key here (get one free at https://web3forms.com)
 const WEB3FORMS_ACCESS_KEY = "1894ea78-1e25-4827-b899-3dce28e47612"
@@ -55,6 +56,12 @@ export default function Contact() {
 
   return (
     <div>
+      <SEO
+        title="Contact BytzAI — Start Your AI Engineering Project"
+        description="Get in touch with BytzAI. Send us a message or book a strategy call directly with our engineering leadership to discuss your AI software engineering or IT transformation project."
+        keywords="contact BytzAI, book a strategy call, AI engineering consultation, start a project with BytzAI, IT transformation contact"
+        canonical="/contact"
+      />
       <section className="relative min-h-[60vh] flex flex-col justify-end pb-20 pt-36 overflow-hidden bg-[#F7F5F2]">
         <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
         {[1, 2, 3].map((i) => (

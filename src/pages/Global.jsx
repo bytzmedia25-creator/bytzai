@@ -1,6 +1,7 @@
 import React, { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import Footer from "../components/landing/Footer"
+import SEO from "../components/SEO"
 
 const regions = [
   { name: "India", region: "South Asia", desc: "Primary engineering hub" },
@@ -34,6 +35,12 @@ export default function Global() {
 
   return (
     <div>
+      <SEO
+        title="Global Reach — BytzAI Engineering Across 16+ Geographies"
+        description="BytzAI operates across 16+ geographies with timezone-aligned engineering teams. We deliver world-class AI software engineering and IT transformation services globally."
+        keywords="global AI engineering, offshore software development, timezone-aligned teams, global IT transformation, international software delivery, BytzAI global"
+        canonical="/global"
+      />
       <section ref={heroRef} className="relative min-h-[65vh] flex flex-col justify-end pb-20 pt-36 overflow-hidden bg-foreground">
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <motion.svg className="absolute inset-0 w-full h-full opacity-10" viewBox="0 0 1400 800" preserveAspectRatio="xMidYMid slice">

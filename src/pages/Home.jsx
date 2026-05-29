@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform, useMotionValue, useSpring, AnimatePres
 import { ArrowRight, ArrowUpRight, Zap, Globe, Code2, Cpu } from "lucide-react"
 import { Link } from "react-router-dom"
 import Footer from "../components/landing/Footer"
+import SEO from "../components/SEO"
 import FuturisticBg from "../components/landing/FuturisticBg"
 import TypewriterText from "../components/landing/TypewriterText"
 
@@ -92,6 +93,12 @@ export default function Home() {
 
   return (
     <div>
+      <SEO
+        title="BytzAI | AI Software Engineering & IT Transformation Services"
+        description="BytzAI delivers AI software engineering, cloud migration, enterprise product development, DevOps, and IT transformation services to help businesses innovate, modernize, and scale faster."
+        keywords="AI Software Engineering, AI Development Company, IT Transformation Services, Digital Transformation, Cloud Migration Services, Enterprise Product Engineering, DevOps Consulting, SaaS Development, AI Automation Solutions, Managed Cloud Services"
+        canonical="/"
+      />
       <section ref={containerRef} className="relative min-h-screen flex flex-col justify-end pb-24 pt-32 overflow-hidden bg-[#F7F5F2]">
         <motion.div style={{ scale: bgScale }} className="absolute inset-0">
           <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />

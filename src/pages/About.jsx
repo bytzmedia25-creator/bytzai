@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import Footer from "../components/landing/Footer"
 import FuturisticBg from "../components/landing/FuturisticBg"
 import TypewriterText from "../components/landing/TypewriterText"
+import SEO from "../components/SEO"
 
 const metrics = [
   { value: "10×", label: "Faster Delivery" },
@@ -26,6 +27,12 @@ export default function About() {
 
   return (
     <div>
+      <SEO
+        title="About BytzAI — Our Mission, Team & Vision"
+        description="Learn about BytzAI — our mission to accelerate software delivery through AI engineering, our global team, and our vision for the future of intelligent software development."
+        keywords="About BytzAI, AI engineering company, software delivery company, AI transformation team, BytzAI mission"
+        canonical="/about"
+      />
       <section ref={heroRef} className="relative min-h-[70vh] flex flex-col justify-end pb-20 pt-36 overflow-hidden bg-[#F7F5F2]">
         <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
         <FuturisticBg showParticles orbCount={2} />

@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 import { ArrowUpRight, ArrowRight } from "lucide-react"
 import { Link } from "react-router-dom"
 import Footer from "../components/landing/Footer"
+import SEO from "../components/SEO"
 import FuturisticBg from "../components/landing/FuturisticBg"
 
 const services = [
@@ -72,6 +73,12 @@ export default function Services() {
 
   return (
     <div>
+      <SEO
+        title="Services — AI Software Engineering, Cloud & DevOps"
+        description="Explore BytzAI's full service portfolio: AI Software Engineering, IT Transformation, Cloud Migration, Enterprise Product Engineering, DevOps, SaaS Development, and AI-Augmented Teams."
+        keywords="AI Software Engineering services, Cloud Migration services, DevOps consulting, SaaS development company, enterprise product engineering, IT transformation, AI-augmented teams"
+        canonical="/services"
+      />
       <section ref={heroRef} className="relative min-h-[65vh] flex flex-col justify-end pb-20 pt-36 overflow-hidden bg-[#F7F5F2]">
         <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
         <FuturisticBg showParticles orbCount={2} />

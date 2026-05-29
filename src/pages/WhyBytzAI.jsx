@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { Link } from "react-router-dom"
 import { ArrowRight } from "lucide-react"
 import Footer from "../components/landing/Footer"
+import SEO from "../components/SEO"
 import FuturisticBg from "../components/landing/FuturisticBg"
 
 const comparison = [
@@ -30,6 +31,12 @@ export default function WhyBytzAI() {
 
   return (
     <div>
+      <SEO
+        title="Why BytzAI — The Case for AI-Augmented Engineering"
+        description="Discover why leading organizations choose BytzAI to accelerate delivery. We combine human expertise with AI to ship software faster, reduce risk, and drive measurable business outcomes."
+        keywords="why BytzAI, AI-augmented engineering, faster software delivery, AI development advantage, software delivery acceleration, reduce engineering costs"
+        canonical="/why"
+      />
       <section ref={heroRef} className="relative min-h-[65vh] flex flex-col justify-end pb-20 pt-36 overflow-hidden bg-[#F7F5F2]">
         <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
         <FuturisticBg showParticles orbCount={2} />
